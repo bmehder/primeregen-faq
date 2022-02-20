@@ -41,7 +41,7 @@
     cursor: pointer;
   }
   .faq-item h3:hover,
-  .faq-item .open h3 {
+  .faq-item.open h3 {
     background: #282568;
     color: #efefef;
   }
