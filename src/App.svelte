@@ -5,7 +5,7 @@
   let selectedItem = null
 </script>
 
-<div id="svelte-faq">
+<div class="faq">
   <h2>Wound Care</h2>
   <section>
     {#each wound as item, index}
@@ -22,14 +22,13 @@
 </div>
 
 <style>
-  :global(#svelte-faq section) {
+  .faq section {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     margin-bottom: 2rem;
   }
-  :global(#svelte-faq h2) {
-    padding-left: 2rem;
+  .faq h2 {
     font-size: 2rem;
     line-height: 2em;
   }

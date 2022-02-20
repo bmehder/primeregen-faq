@@ -25,7 +25,7 @@
   />
 </svelte:head> -->
 
-<div class:open={isOpen}>
+<div class="faq-item" class:open={isOpen}>
   <h3 on:click={handleClick}>
     <span>{question}</span>
     <i class="fas fa-chevron-down" />
@@ -36,7 +36,7 @@
 </div>
 
 <style>
-  :global(#svelte-faq h3) {
+  .faq-item h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,31 +47,32 @@
     line-height: 1.5rem;
     cursor: pointer;
   }
-  :global(#svelte-faq h3:hover, #svelte-faq .open h3) {
+  .faq-item h3:hover,
+  .faq-item .open h3 {
     background: #282568;
     color: #efefef;
   }
-  :global(#svelte-faq div div) {
+  .faq-item div {
     padding: 1px 2rem;
     font-size: 18px;
     line-height: 1.5rem;
   }
-  :global(#svelte-faq p:first-child) {
+  :global(.faq-item p:first-child) {
     padding-top: 1.5rem;
     font-size: 18px;
   }
-  :global(#svelte-faq i) {
+  .faq-item i {
     transition: transform 200ms ease;
   }
-  :global(#svelte-faq .open i) {
+  .faq-item .open i {
     transform: rotate(180deg);
   }
-  :global(#svelte-faq .sublist) {
+  :global(.faq-item .sublist) {
     margin-top: 0.5rem !important;
     padding-left: 1.5rem;
   }
   @media screen and (max-width: 600px) {
-    :global(#svelte-faq div div) {
+    .faq-item div div {
       padding: 1px 0.5rem;
     }
   }
