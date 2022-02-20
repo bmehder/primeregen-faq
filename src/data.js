@@ -22,7 +22,7 @@ export let wound = [
     question: 'Comorbidities, Diabetes and Wound Care',
     answer: `<p>
         When a person is diagnosed with two or more diseases, this is called Comorbidities. There is
-        usually a significant impact on the patients health and opportunity for healing when
+        usually a significant impact on the patient's health and opportunity for healing when
         comorbidities exist.
       </p>
       <p>
@@ -63,7 +63,7 @@ export let wound = [
       <p>
         Another important component to support healing is hydration - getting lots of water and
         electrolytes into your body. Water takes nutrients to and from our cells that promote
-        healing and its extremely important to ensure that a patient does not become dehydrated
+        healing and it's extremely important to ensure that a patient does not become dehydrated
         which can lead to complications.
       </p>
 
@@ -92,7 +92,7 @@ export let wound = [
     question: 'How Can I Help my Loved One with their Severe Wound?',
     answer: `<p>
         People who suffer from chronic wounds often need assistance at home or mobilizing into the
-        community. We are often asked by a patients caregiver:
+        community. We are often asked by a patient's caregiver:
         <em>"How can I help them make improvements in their wound."</em>
       </p>
 
