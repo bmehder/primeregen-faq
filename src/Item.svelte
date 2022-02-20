@@ -23,7 +23,7 @@
     <span>{question}</span>
     <i class="fas fa-chevron-down" />
   </h3>
-  {#if selectedItem === index}
+  {#if isOpen}
     <div transition:slide>{@html answer}</div>
   {/if}
 </div>
@@ -46,27 +46,19 @@
     color: #efefef;
   }
   .faq-item div {
-    padding: 0 2rem;
+    padding: 1.5rem 2rem 0;
     font-size: 18px;
     line-height: 1.5rem;
-  }
-  :global(.faq-item p:first-child) {
-    padding-top: 1.5rem;
-    font-size: 18px;
   }
   .faq-item i {
     transition: transform 200ms ease;
   }
-  .faq-item .open i {
+  .faq-item.open i {
     transform: rotate(180deg);
-  }
-  :global(.faq-item .sublist) {
-    margin-top: 0.5rem !important;
-    padding-left: 1.5rem;
   }
   @media screen and (max-width: 600px) {
     .faq-item div {
-      padding: 1px 0.5rem;
+      padding: 0 0.5rem;
     }
   }
 </style>

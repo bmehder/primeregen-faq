@@ -109,7 +109,7 @@ export let wound = [
         </li>
         <li>
           Knowing signs of infection and monitor/report to the clinical team right away:
-          <ul class="sublist">
+          <ul style="margin-top: 0.5rem !important; padding-left: 1.5rem;">
             <li>Fever</li>
             <li>Redness</li>
             <li>Foul odor</li>
