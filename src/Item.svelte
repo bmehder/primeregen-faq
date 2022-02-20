@@ -18,12 +18,12 @@
   }
 </script>
 
-<svelte:head>
+<!-- <svelte:head>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
   />
-</svelte:head>
+</svelte:head> -->
 
 <div class:open={isOpen}>
   <h3 on:click={handleClick}>
@@ -36,9 +36,6 @@
 </div>
 
 <style>
-  :global(#svelte-faq div) {
-    padding: 0 1rem;
-  }
   :global(#svelte-faq h3) {
     display: flex;
     justify-content: space-between;
@@ -50,7 +47,7 @@
     line-height: 1.5rem;
     cursor: pointer;
   }
-  :global(#svelte-faq h3:hover, .open h3) {
+  :global(#svelte-faq h3:hover, #svelte-faq .open h3) {
     background: #282568;
     color: #efefef;
   }
@@ -59,10 +56,19 @@
     font-size: 18px;
     line-height: 1.5rem;
   }
+  :global(#svelte-faq p:first-child) {
+    padding-top: 1.5rem;
+    font-size: 18px;
+  }
   :global(#svelte-faq i) {
     transition: transform 200ms ease;
   }
   :global(#svelte-faq .open i) {
     transform: rotate(180deg);
+  }
+  @media screen and (max-width: 600px) {
+    :global(#svelte-faq div div) {
+      padding: 1px 0rem;
+    }
   }
 </style>

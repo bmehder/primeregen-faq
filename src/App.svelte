@@ -22,11 +22,14 @@
 </div>
 
 <style>
-  #svelte-faq section {
+  :global(#svelte-faq section) {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
   }
-  #svelte-faq h2 {
+  :global(#svelte-faq h2) {
+    padding-left: 2rem;
     font-size: 2rem;
     line-height: 2em;
   }
