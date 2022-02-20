@@ -66,9 +66,13 @@
   :global(#svelte-faq .open i) {
     transform: rotate(180deg);
   }
+  :global(#svelte-faq .sublist) {
+    margin-top: 0.5rem !important;
+    padding-left: 1.5rem;
+  }
   @media screen and (max-width: 600px) {
     :global(#svelte-faq div div) {
-      padding: 1px 0rem;
+      padding: 1px 0.5rem;
     }
   }
 </style>
