@@ -18,13 +18,6 @@
   }
 </script>
 
-<!-- <svelte:head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-  />
-</svelte:head> -->
-
 <div class="faq-item" class:open={isOpen}>
   <h3 on:click={handleClick}>
     <span>{question}</span>
@@ -53,7 +46,7 @@
     color: #efefef;
   }
   .faq-item div {
-    padding: 1px 2rem;
+    padding: 0 2rem;
     font-size: 18px;
     line-height: 1.5rem;
   }
@@ -72,7 +65,7 @@
     padding-left: 1.5rem;
   }
   @media screen and (max-width: 600px) {
-    .faq-item div div {
+    .faq-item div {
       padding: 1px 0.5rem;
     }
   }
